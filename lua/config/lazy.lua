@@ -16,7 +16,8 @@ require("lazy").setup({
     {
         "LazyVim/LazyVim",
         import = "lazyvim.plugins"
-    }, -- import/override with your plugins
+    }, -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- import/override with your plugins
     {
         import = "plugins"
     }},
@@ -30,7 +31,7 @@ require("lazy").setup({
         -- version = "*", -- try installing the latest stable version for plugins that support semver
     },
     install = {
-        colorscheme = {"tokyonight", "habamax"}
+        colorscheme = {"tokyonight", "habamax", "gruvebox"}
     },
     checker = {
         enabled = true, -- check for plugin updates periodically
